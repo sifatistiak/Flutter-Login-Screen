@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:login/components/text_field.dart';
+import 'package:login/constants.dart';
 
 class RoundedInputField extends StatelessWidget {
   final String hintText;
@@ -19,6 +20,7 @@ class RoundedInputField extends StatelessWidget {
     return TextFieldContainer(
       child: TextField(
         controller: TextEditingController()..text = "01",
+        cursorColor: kPrimaryColor,
         decoration: InputDecoration(
           icon: icon,
           hintText: hintText,
