@@ -28,6 +28,9 @@ class _BodyState extends State<Body> {
                 fontSize: kPrimaryHeaderSize * 0.7,
               ),
             ),
+            SizedBox(
+              height: size.height * 0.08,
+            ),
             SvgPicture.asset(
               "assets/icons/login.svg",
               height: size.height * 0.3,
@@ -40,11 +43,18 @@ class _BodyState extends State<Body> {
               ),
               onChange: (value) {},
             ),
+            SizedBox(
+              height: size.height * 0.01,
+            ),
             PasswordInputField(
               onChange: (value) {},
             ),
+            SizedBox(
+              height: size.height * 0.01,
+            ),
             RoundedButton(
               text: "LOGIN",
+              textColor: kPrimaryLightColor,
               onPress: () {},
             ),
           ],
